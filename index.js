@@ -5,11 +5,24 @@ const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
 
 btn.addEventListener("click", () => {
 
+    appStart();
+
+})
+
+document.addEventListener("keydown", function (e) {
+
+    if (e.key == "Enter") {
+        appStart();
+    }
+
+
+})
+
+const appStart = () => {
     const cityName = document.querySelector("input").value;
     getCurrent(cityName);
     deleteElement();
-
-})
+}
 
 const getCurrent = async (cityName) => {
     const response = await fetch(
