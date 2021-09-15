@@ -6,12 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div class="search-container">
+        <input type="text" autocomplete="off" placeholder="City Name..." name="search">
+        <button id="btn" type="submit"><i class="fa fa-search"></i></button>
 
-    <script src="index.js"></script>
+    </div>
+    <div class="container">
+
+        <div class="weather-side">
+            <div class="weather-gradient">
+
+
+                <div class="date-container">
+                    <h2 class="day-dayname">Tuesday</h2>
+                    <span class="date-dayname">1/05/2002</span><br>
+                    <i class="far fa-compass"></i>
+                    <span class="location">Sinop, TR</span>
+                </div>
+
+                <div class="detail-container">
+                    <span class="feels-like">Feels Like : </span><br>
+                    <span class="temp-max">Max Temp : </span><br>
+                    <span class="temp-min">Min Temp : </span><br>
+                    <span class="humidity">Humidity : </span>
+                </div>
+
+                <div class="weather-container">
+                    <!-- <i  class="far fa-sun fa-3x"></i> -->
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                    <h1 class="weather-temp">33 °C</h1>
+                    <h3 class="weather-desc">Sunny</h3>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
